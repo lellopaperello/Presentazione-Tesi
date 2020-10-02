@@ -1,0 +1,140 @@
+\documentclass{beamer}
+
+\usetheme[bgphoto]{polimi}
+\usefonttheme[onlymath]{serif}
+
+% Full instructions available at:
+% https://github.com/elauksap/beamerthemepolimi
+
+% Set custom font (requires to compile with XeLaTeX).
+\usepackage{ifxetex}
+\ifxetex
+    \usepackage{fontspec}
+    \setsansfont[Scale=0.95]{Arial}
+\fi
+
+\usepackage{lipsum}
+
+\title{Title}
+\subtitle{Subtitle}
+\author{Author}
+\date{dd mm yyyy}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+        % If the theme option "nologo" is specified, a custom logo
+        % can be added with the following commands:
+        %\begin{tikzpicture}[overlay, remember picture]
+        %    \node at (current page.north) [anchor=north, inner sep=2cm]
+        %    {
+        %        \includegraphics[width=0.3\paperwidth]{logo_centrato_BN_negativo.png}
+        %    };
+        %\end{tikzpicture}
+    \end{frame}
+    
+    \begin{frame}{Outline}
+      \tableofcontents
+    \end{frame}
+    
+\section{Objective}
+    % Section page.
+    \begin{frame}[plain]{}
+        \sectionpage
+    \end{frame}
+    
+    \begin{frame}{Initial Research Question}
+        \begin{block}{Lagrangian Particle Tracking of Snowflakes}
+        	Find a general formula for the drag coefficient of blowing snow
+        	\begin{equation*}
+        		c_D = c_D (Re, \text{parameters})
+        	\end{equation*}
+        	And implement it in PoliMIce with some general rule for the choice of the main parameters.
+        \end{block}
+    \end{frame}
+    
+    \begin{frame}{Literature Review}
+    	\begin{alertblock}{What is not available}
+    		\begin{itemize}
+    			\item $ c_D $ formula tuned for snowflakes
+    			\item Experimental measurements of blowing snowflakes velocities
+    			\item Shape of the typical snowflake (they are almost unique)
+    		\end{itemize}
+    	\end{alertblock}
+    
+		\begin{exampleblock}{What is available}
+			\begin{itemize}
+				\item $ c_D $ formulae tuned for arbitrary shaped bodies
+				\item Experimental measurements of falling snowflakes terminal velocities
+				\item General parameters that describe the shape (CAMBIARE)
+			\end{itemize}
+		\end{exampleblock}
+    \end{frame}
+
+    \begin{frame}{Updated Research Question}
+		\begin{block}{Drag coefficient formula}
+			Find a suitable existing model to infer the main parameters in the falling regime and use them in the blowing one
+		\end{block}
+	
+		\begin{block}{Snow Parameters}
+			Develop a method to find the discrete set of properties that on average describe a certain \textit{cloud}
+		\end{block}
+	\end{frame}
+    
+\section{Method}
+    \begin{frame}{Outline}
+    	\tableofcontents[currentsection]
+    \end{frame}
+    
+    \begin{frame}{Data Generation}
+		Reproduce an artificial data set from the \textit{velocity-diameter} relation of Brandes et al - 2008. The diameter distribution is not taken into account.
+		
+		\centering
+		\includegraphics[height=.5\textheight]{404notFound.png}
+    \end{frame}
+
+\subsection{Data Analysis}
+	\begin{frame}{The Drag Model}
+		\begin{block}{Ganser - 1993}
+			\begin{equation*}
+				c_D = K_2 \left( \frac{24}{Re K_1 K_2} (1 + 0.1118 (Re K_1 K_2)^{0.6567}) + \frac{0.4305}{1 + \frac{3305}{Re K_1 K_2}}\right) 
+			\end{equation*}
+			\vfill
+		\end{block}
+		
+		
+		\begin{columns}[T]
+			\begin{column}{.4\textwidth}
+				\begin{block}{Stokes' Shape Factor}
+					\centering
+					$ K_1 = \left( \frac{1}{3} \frac{d_n}{d_v} + \frac{2}{3} \Phi^{-\frac{1}{2}} \right)^{-1} $
+				\end{block}
+			\end{column}
+			
+			\begin{column}{.4\textwidth}
+				\begin{block}{Newton's Shape Factor}
+					\centering
+					$ K_2 = 10^{1.8148 (-log(\Phi))^{0.5743}} $
+				\end{block}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}{General Scheme}
+		% Diagramma di flusso
+		\centering
+		\includegraphics[height=.5\textheight]{GeneralScheme.pdf}
+	\end{frame}
+
+	\begin{frame}{Bayesian Approach}
+		
+	\end{frame}
+	
+	\begin{frame}{Gaussian Mixture Models}
+		
+	\end{frame}
+	
+\section{Result}
+
+
+\end{document}
