@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="windows-1252"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="rectangle" id="id6136411">
+            <rect x="61.0" y="41.0" width="218.0" height="58.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id27369147" fill="black" latexdraw:position="bl">
+            <text x="106.0" y="76.0">Data Generation</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id24852057">
+            <rect x="61.0" y="161.0" width="218.0" height="78.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id12718398" fill="black" latexdraw:position="bl">
+            <text x="110.5" y="196.28125">Parameter</text>
+        </g>
+        <g latexdraw:type="text" id="id27019628" fill="black" latexdraw:position="bl">
+            <text x="108.25" y="215.71875">Estimation</text>
+        </g>
+        <g latexdraw:type="rhombus" id="id17006833" latexdraw:points="90.00001525878906 280.0 250.00001525878906 280.0 90.00001525878906 360.0 250.00001525878906 360.0">
+            <polygon points="170.00001525878906,281.1180339887499 247.76394728128926,320.0 170.00001525878906,358.8819660112501 92.23608323628885,320.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id30014442" fill="black" latexdraw:position="bl">
+            <text x="130.50001525878906" y="327.5">$ \varphi_k = \varphi_{k-1} $</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id10943978">
+            <rect x="111.0" y="401.0" width="118.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id14604080" fill="black" latexdraw:position="bl">
+            <text x="154.25" y="420.0">Exit</text>
+        </g>
+        <g latexdraw:type="text" id="id23138822" fill="black" latexdraw:position="bl">
+            <text x="231.0" y="207.25">$ \varphi_k $</text>
+        </g>
+        <g latexdraw:type="circle" id="id9832157">
+            <circle cx="240.0" cy="200.0" r="19.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id26639242">
+            <polyline points="170.0,100.0 170.0,160.0 " stroke-width="2.0" stroke="black" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-26639242)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id32544517">
+            <polyline points="169.99998474121094,240.0 169.99998474121094,280.0 " stroke-width="2.0" stroke="black" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-32544517)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id9036666">
+            <polyline points="170.0,360.0 170.0,400.0 " stroke-width="2.0" stroke="black" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-9036666)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id18128361">
+            <polyline points="250.0,320.0 360.0,320.0 360.0,130.0 170.0,130.0 " stroke-width="2.0" stroke="black" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-18128361)"/>
+        </g>
+        <g latexdraw:type="text" id="id18275659" fill="black" latexdraw:position="bl">
+            <text x="180.0" y="382.92396545410156">yes</text>
+        </g>
+        <g latexdraw:type="text" id="id3210957" fill="black" latexdraw:position="bl">
+            <text x="280.0" y="310.0">no</text>
+        </g>
+        <g latexdraw:type="text" id="id23701361" fill="black" latexdraw:position="bl" transform="rotate(-90.0) translate(-590.952380952381 110.95238095238096)">
+            <text x="350.95238095238096" y="240.0">$k + 1$</text>
+        </g>
+        <g latexdraw:type="text" id="id22640021" fill="black" latexdraw:position="bl">
+            <text x="200.0" y="120.0">$ k = 0 $</text>
+        </g>
+    </g>
+    <defs>
+        <marker overflow="visible" orient="auto" id="arrow1-26639242">
+            <path d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z " latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-32544517">
+            <path d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z " latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-9036666">
+            <path d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z " latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-18128361">
+            <path d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z " latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+    </defs>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes>&#13;
+
+            </latexdraw:latexIncludes>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>10</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.9</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1382</latexdraw:width>
+                <latexdraw:height>744</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>-8.0</latexdraw:x>
+                <latexdraw:y>-8.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

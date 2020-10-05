@@ -121,19 +121,72 @@
 	\end{frame}
 
 	\begin{frame}{General Scheme}
-		% Diagramma di flusso
-		\centering
-		\includegraphics[height=.5\textheight]{GeneralScheme.pdf}
+		\begin{columns}[T]
+			\begin{column}{.4\textwidth}
+				\centering
+				\includegraphics[height=.6\textheight, keepaspectratio] {GeneralScheme.pdf}
+			\end{column}
+		
+			\begin{column}{.6\textwidth}
+				\centering
+				\includegraphics[width=.9\textwidth, keepaspectratio] {MultiParameter.pdf}
+				\begin{itemize}
+					\item $ (d_v, v_t) $: Experimental data
+					\item $ \varphi_1, \varphi_2 \dots \varphi_D = \underline{\varphi} $: Free parameters
+					\item $ D $: Number of parameters $ \sim  $ problem dimension
+				\end{itemize}
+			\end{column}
+		\end{columns}
 	\end{frame}
 
 	\begin{frame}{Bayesian Approach}
-		
+		\begin{block}{Bayes' Theorem}
+			\begin{equation*}
+				\underbrace{prob(\delta HP|D,I)}_{Posterior Probability} \propto
+				\underbrace{prob(D|\delta HP,I)}_{Likelihood Function} \cdot \underbrace{prob(\delta HP|I)}_{Prior Probability}
+			\end{equation*}
+			\begin{itemize}
+				\item \textit{Prior:} State of knowledge (or ignorance) before analyzing the data 
+				
+				\item \textit{Likelihood:} Experimental measurements
+				\item \textit{Posterior:} State of knowledge in light of the data
+			\end{itemize}
+		\end{block}
+	
+	
+		\begin{block}{Marginalization Equation and Sum Rule}
+			\begin{equation*}
+				prob(HP|D,I) = \int_{-\infty}^{+\infty} prob(\delta HP|D,I) \delta HP = 1
+			\end{equation*}
+		\end{block}
 	\end{frame}
 	
+	\begin{frame}{Problem formulation}
+		\begin{block}{Prior}
+			\begin{equation*}
+				\begin{split}			
+				prob(HP|I) & = prob(\underline{\varphi}) : \textit{Uniform} \text{ in the range of physical solution.}\\
+				& = \left\{ 
+				\begin{array}{cc}
+				\dfrac{1}{(\varphi_{1, M} - \varphi_{1, m}) (\varphi_{2, M} - \varphi_{2, m}) \dots (\varphi_{D, M} - \varphi_{D, m})} \\
+				0 
+				\end{array} \right.
+				\end{split}
+			\end{equation*}				
+		\end{block}
+		
+		\begin{block}{Likelihood}
+			\begin{equation*}
+				prob(D|HP,I) = \prod_{n = 1}^{N_{data}} \sum_{k = 1}^{N_{modes}} \pi_k \ e^{-\dfrac{1}{2} \left(\dfrac{v_{t,n} - v_t(d_{v,n}, \underline{\varphi}_k)}{\sigma_n} \right)^2}
+			\end{equation*}
+		\end{block}	
+	\end{frame}
+
 	\begin{frame}{Gaussian Mixture Models}
-		
+		\centering
+		\includegraphics[height=.6\textheight]{GMM.png}
 	\end{frame}
-	
+
 \section{Result}
 
 
